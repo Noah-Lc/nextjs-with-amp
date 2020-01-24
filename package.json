@@ -1,9 +1,12 @@
 {
-  "name": "nuxtjs-amp",
+  "name": "@nuxtjs/amp",
   "version": "1.0.0",
-  "description": "My exceptional Nuxt.js project",
+  "description": "AMP valid pages for Nuxt",
   "author": "Noah Lc",
-  "private": true,
+  "repository": "https://github.com/Noah-Lc/nextjs-with-amp",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -11,7 +14,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "amphtml-validator": "^1.0.29",
+    "chalk": "^3.0.0",
+    "consola": "^2.11.3"
   },
   "devDependencies": {}
 }
