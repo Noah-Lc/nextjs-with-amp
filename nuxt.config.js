@@ -1,4 +1,5 @@
 const ampify = require('./plugins/ampify')
+const validate = require('./plugins/utils')
 
 export default {
   // Headers of the page
@@ -28,7 +29,8 @@ export default {
     },
     // This hook is called before rendering the html to the browser
     'render:route': (url, page, { req, res }) => {
-      page.html = ampify(page.html)
+      page.html = ampify(page.html),
+      validate(page.html, url)
     }
   }
 }

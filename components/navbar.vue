@@ -8,9 +8,7 @@
 			</div>
 			<div class='links'>
 				<a class="link" href="#about">Home</a>
-				<a class="link" href="#products">About us</a>
-				<a class="link" href="#why-dessiner">Articles</a>
-				<a class="link" href="#contact">Contact</a>
+				<a class="link" href="#products">Page</a>
 			</div>
 		</div>
 	</header>

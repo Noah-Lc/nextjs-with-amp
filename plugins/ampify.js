@@ -1,3 +1,6 @@
+const consola = require('consola')
+const chalk = require('chalk')
+const logger = consola.withScope('@nuxtjs/amp')
 const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script>'
 
 module.exports = (html) => {
@@ -15,5 +18,7 @@ module.exports = (html) => {
     html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
     // Add AMP script before </head>
     html = html.replace('</head>', ampScript + '</head>')
+
     return html
 }
+
